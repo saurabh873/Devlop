@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Report</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        .report-container {
+            width: 80%;
+            max-width: 1000px;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-container">
+        <h1>CSV Report</h1>
+        <img src="{{ image_path }}" alt="CSV Report">
+        <a href="{% url 'upload_file' %}" style="color: white; margin-top: 20px; display: inline-block;">Upload another file</a>
+    </div>
+</body>
+</html>

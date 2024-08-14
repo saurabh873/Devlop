@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Success</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .success-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <h1>File Uploaded Successfully!</h1>
+        <a href="{% url 'upload_file' %}" style="color: white;">Upload another file</a>
+    </div>
+</body>
+</html>
